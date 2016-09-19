@@ -32,8 +32,13 @@
   <ItemGroup>
     <Compile Include="app.js" />
     <Compile Include="bin\www" />
+    <Compile Include="routes\contact.js" />
     <Compile Include="routes\index.js" />
-    <Compile Include="routes\users.js" />
+    <Compile Include="routes\about.js" />
+    <Compile Include="routes\projects.js" />
+    <Compile Include="routes\tools.js" />
+    <Compile Include="routes\blog.js" />
+    <Compile Include="routes\services.js" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\style.css" />
     <Content Include="public\stylesheets\style.styl" />
@@ -41,9 +46,15 @@
     <Content Include="typings.json" />
     <Content Include="views\about.jade" />
     <Content Include="views\contact.jade" />
-    <Content Include="views\index.jade" />
-    <Content Include="views\layout.jade" />
     <Content Include="views\error.jade" />
+    <Content Include="views\index.jade" />
+    <Content Include="views\head.jade" />
+    <Content Include="views\header.jade" />
+    <Content Include="views\footer.jade" />
+    <Content Include="views\layout.jade" />
+    <Content Include="views\blog.jade" />
+    <Content Include="views\tools.jade" />
+    <Content Include="views\projects.jade" />
     <Content Include="views\services.jade" />
   </ItemGroup>
   <ItemGroup>
