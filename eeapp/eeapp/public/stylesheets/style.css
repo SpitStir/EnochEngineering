@@ -33,7 +33,7 @@ html {
 }
 .main_resize h2 {
   font: normal 18px Arial, Helvetica, sans-serif;
-  color: #2a2a2a;
+  color: #f7941e;
   padding: 10px 5px;
   margin: 0;
 }
@@ -50,7 +50,7 @@ html {
 }
 .main_resize p {
   font: normal 12px Arial, Helvetica, sans-serif;
-  color: #606060;
+  color: #1c75bc;
   line-height: 1.8em;
   padding: 5px;
   margin: 0;
@@ -146,9 +146,10 @@ html {
 }
 .menu ul li a {
   display: inline;
+  border-radius: 5px 5px 0px 0px;
   margin: 0;
   padding: 11px;
-  color: #5a5a5a;
+  color: #f7941e;
   font: normal 11px Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
@@ -183,26 +184,33 @@ html {
 }
 .slider_main .leftt h2 {
   font: normal 24px Arial, Helvetica, sans-serif;
-  color: #616161;
+  color: #f7941e;
   padding: 71px 0 0 24px;
   margin: 0;
   line-height: 1.2em;
 }
 .slider_main .leftt p {
   font: normal 12px Arial, Helvetica, sans-serif;
-  color: #818181;
+  color: #1c75bc;
   padding: 10px 0 15px 24px;
   margin: 0;
   line-height: 1.8em;
 }
-.slider_main .leftt img {
-  float: left;
-  margin: 0;
-  padding: 0 0 0 24px;
+.slider_main .leftt a {
+  display: inline;
+  margin: 22px;
+  padding: 11px;
+  color: #616161;
+  font: normal 13px Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.slider_main .leftt a:hover {
+  background: #dfdfdf;
 }
 .search {
   padding: 0;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 15px auto;
 }
 .search form {
   display: block;
@@ -251,7 +259,7 @@ html {
   border-top: 1px solid #dadada;
   background: #ececec;
   padding: 0;
-  margin: 0 0 30px 0;
+  margin: 0 0 15px 0;
 }
 .right_text p {
   font: normal 11px Arial, Helvetica, sans-serif;
@@ -320,41 +328,6 @@ html {
   background: #f8f8f8;
   float: left;
 }
-.footer {
-  padding: 5px 0;
-  margin: 0;
-}
-.footer p {
-  font: normal 11px Arial, Helvetica, sans-serif;
-  color: #a2a2a2;
-}
-.footer p.right {
-  text-align: right;
-  width: 350px;
-  margin: 0;
-  padding: 8px 0 0 0;
-  float: right;
-}
-.footer p.leftt {
-  text-align: left;
-  width: 550px;
-  margin: 0;
-  padding: 8px 0 0 5px;
-  float: left;
-}
-.footer a {
-  font: normal 11px Arial, Helvetica, sans-serif;
-  color: #2d75c0;
-  text-decoration: none;
-  padding: 5px;
-  margin: 0;
-}
-.footer_resize {
-  width: 958px;
-  margin: 0 auto;
-  padding: 10px 10px;
-  background: #202020;
-}
 p.clr,
 .clr {
   clear: both;
@@ -376,13 +349,13 @@ li.bg,
   width: 648px;
   padding: 10px 0 0 0;
   margin: 0;
-  height: 428px;
+  height: 345px;
   float: right;
 }
 #slideshow {
   margin: 0 auto;
   width: 653px;
-  height: 346px;
+  height: 316px;
 }
 .slider-item {
   height: 346px;
@@ -394,42 +367,18 @@ li.bg,
   margin: 0 auto;
 }
 .controls-center {
-  width: 678px;
   margin: 0 auto;
   padding: 0;
-}
-.controls-center h2 {
-  width: 350px;
-  float: left;
-  font: bold 14px Arial, Helvetica, sans-serif;
-  color: #6d6d6d;
-  padding: 15px 0 0 20px;
-  margin: 0;
-}
-.controls-center h3 {
-  text-align: right;
-  font: normal 36px Arial, Helvetica, sans-serif;
-  color: #111;
-  padding: 10px 20px 15px 0;
-  margin: 0;
-}
-.controls-center p {
-  width: 300px;
-  float: left;
-  font: normal 12px Arial, Helvetica, sans-serif;
-  color: #6d6d6d;
-  padding: 3px 0 0 20px;
-  margin: 0;
 }
 #slider_controls {
   float: right;
   margin: 0;
-  width: 90px;
+  width: 115px;
 }
 #slider_controls ul {
   margin: 0 auto;
   padding: 0;
-  width: 74px;
+  width: 120px;
 }
 #slider_controls ul li {
   background: none;
@@ -456,4 +405,38 @@ li.bg,
 #slider_controls ul li a:hover,
 #slider_controls ul li a.activeSlide {
   background: url("../images/tabs_1.gif") no-repeat center center;
+}
+.footerleft {
+  padding: 0px 40px 40px 40px;
+  float: left;
+}
+.footerleft p {
+  font-size: 15px;
+  line-height: 18px;
+  color: #888;
+  text-align: left;
+}
+.footerleft h3 {
+  font-size: 26px;
+  font-weight: 300;
+  color: #888;
+  line-height: 36px;
+  text-align: left;
+}
+.footerright {
+  border-top: 1px solid #dfdfdf;
+  padding: 0px 40px 40px 40px;
+}
+.footerright p {
+  font-size: 15px;
+  line-height: 18px;
+  color: #888;
+  text-align: right;
+}
+.footerright h3 {
+  font-size: 26px;
+  font-weight: 300;
+  color: #888;
+  line-height: 36px;
+  text-align: right;
 }

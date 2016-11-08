@@ -1,35 +1,36 @@
 ﻿extends layout
 
 block content
-  
-      
-        
         .slider_main
           .leftt
             h2
-              | We'll make sure your 
+              | Lets work together 
               br
-              |           website works for you...
+              | to find your solution...
             p
-              | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-            a(href='#')
-              img(src='images/view_port.gif', alt='', width='136', height='33', border='0')
+              | We use an agile approach to delivering our services. Through incremental reviews and iterations we can tailor a solution to your needs. 
+            a(href='/projects')
+              span View projects
           #slider
             // start slideshow
             #slideshow
               .slider-item
                 a(href='#')
-                  img(src='images/simple_img_1.jpg', alt='', width='648', height='303', border='0')
+                  img(src='images/Slide-Agile.png', alt='', width='648', height='303', border='0')
               .slider-item
                 a(href='#')
-                  img(src='images/simple_img_2.jpg', alt='', width='648', height='303', border='0')
+                  img(src='images/Slide-Requirements.png', alt='', width='648', height='303', border='0')
               .slider-item
                 a(href='#')
-                  img(src='images/simple_img_3.jpg', alt='', width='648', height='303', border='0')
+                  img(src='images/Slide-Design.png', alt='', width='648', height='303', border='0')
+              .slider-item
+                a(href='#')
+                  img(src='images/Slide-Development.png', alt='', width='648', height='303', border='0')
+              .slider-item
+                a(href='#')
+                  img(src='images/Slide-Testing.png', alt='', width='648', height='303', border='0')
             // end #slideshow
             .controls-center
-              h2 Your company's welcome message or slogan. 
-              p Lorem ipsum dolor sit amet, consectur el.
               #slider_controls
                 ul#slider_nav
                   li
@@ -41,6 +42,12 @@ block content
                   li
                     a(href='#')
                   // Slide 3
+                  li
+                    a(href='#')
+                  // Slide 4
+                  li
+                    a(href='#')
+                  // Slide 5
             .clr
           .clr
         .clr
@@ -53,113 +60,53 @@ block content
                   input#textfield.keywords(name='q', type='text', maxlength='50', value='')
                 input.button(name='b', type='image', src='images/search.gif')
             .clr
-          h2
-            | News and Events
-            br
-            span  Lorem ipsum dolor sit amet, consectetur 
-          p
-            span
-              | 12 Dec 2015 
-              a(href='#') 0 comments
-            br
-            strong Duis nec porttitor lorem
-            br
-            |         Mauris et nisi urna nonfaucibus lacus magna.
-          p
-            span
-              | 18 Dec 2015 
-              a(href='#') 5 comments
-            br
-            strong Aenean interdum
-            br
-            |         Vestibulum ante ipsum primis into faucibus orci luctus ultrices antene posuere.
-          p
-            span
-              | 4 Jan 2015 
-              a(href='#') 2 comments
-            br
-            strong Integer vitae nisl
-            br
-            |         Duis volutpat ligula laoreet orci lectus placerat 
-            br
-            |         Curabitur lectus malesuada pulvinar.
-          p
-            a(href='#') More News »
-            br
-          h2  
-          h2
-            | What They Say
-            br
-            span Lorem ipsum dolor sit amet, consectetur
-          img.floated(src='images/test.gif', alt='', width='18', height='17')
-          p
-            | "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse voluptas nulla pariatur?"
-          p
-            em
-              strong by: John S., webdesigner
+          include SBnews
+          include SBrecommendations  
         .main_right
           .clr
           .right_text
-            p
-              strong Latest News:
-              |  Dipisicing elit, sed do eiusmod tempor incididunt ut labore et?
+            include MBnews
           .clr
           h2
             | Welcome to Our Website
             br
-            span  Ut enim ad minim veniam, quis nostrud exercitation 
+            span  Everything is possible, Just need to figure out the best way to do it.
           p
-            | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium mque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            | Enoch Engineering offers consulting and labour hire services. We have a broad range of skills gained over years of experience while working for SCADA and Control System Vendor and Power and Gas Utility Company. Working in small and large project teams as control system engineer and Senior Electrical and Instrumentation engineer.
           p  
           h2
             | Featured Works
             br
             span
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              | A sample of past and present project, along with some of the key achievements. 
           p
-            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea
-          img.floated(src='images/img_1.jpg', alt='', width='168', height='75')
+            | Below are some of the past projects contributions and achievements. More past and present projects can be viewed form the projects page.
+          img.floated(src='images/wilton.png', alt='', width='168', height='75')
           p
             a(href='#')
-              strong Webname
+              strong Wilton Metering Station - Jemena
             br
-            |         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+            |         As part of the Jemena major works Project team EGP Expansion project, The Wilton metering station facility provides high pressure natural gas regulation and metering. Contributions include review E&I engineering design, Control system and SCADA integration and commissioning of the control system and metering. Achievements include the pressure control programming and tuning, capable of meeting nominations to within 0.005% of the specified nomination.
           p
             a(href='#') Read More »
           .bg
-          img.floated(src='images/img_2.jpg', alt='', width='168', height='75')
+          img.floated(src='images/Mocs.png', alt='', width='168', height='75')
           p
             a(href='#')
-              strong Optimal Design
+              strong Michelago Compressor Station - Jemena
             br
-            |         Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            |         As part of the Jemena major works Project team EGP Expansion project, The Michelago Compressor station facility provides additional flow throughput for the EGP high pressure natural gas pipeline. Contributions include review E&I engineering design, Control system and SCADA integration, communications and E&I and control system commissioning. Achievements include the enhanced diagnostic capabilities made available via the SCADA system. Additional diagnostics information is displayed in a simple list showing both cause and effect, allowing operators to quickly identify faults and triggers and in some cases have time to act to prevent trip and increase compressor availability.
           p
             a(href='#') Read More »
           .bg
-          img.floated(src='images/img_3.jpg', alt='', width='168', height='75')
+          img.floated(src='images/gladstone.png', alt='', width='168', height='75')
           p
             a(href='#')
-              strong Power Design
+              strong Gladstone City Gate - Jemena 
             br
-            |         Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+            |         The Gladstone City Gate, meters and regulates the natural gas supply to Gladstone. Contributions include SCADA and PLC migration and updates. Achievements include improvements to the odorant injection controls and feedback via tuning, fail safe controls and software upgrades. The PLC program upgrades included tracking the odorant usage which provides operators with information about when a tank re-fill is required and how the odorant pump is performing.
           p
             a(href='#') Read More »
           p  
         .clr
-      .footer
-        .footer_resize
-          p.leftt
-            | © Copyright websitename . All Rights Reserved. 
-            a(href='#')  Home
-            |  
-            a(href='#') Contact
-            |  
-            a(href='#') RSS 
-          p.right
-            | (Blue) 
-            a(href='http://www.bluewebtemplates.com') Website Templates
-          .clr
-        .clr
-    div(align='center')
-      | This template  downloaded form 
-      a(href='http://all-free-download.com/free-website-templates/') free website templates
+

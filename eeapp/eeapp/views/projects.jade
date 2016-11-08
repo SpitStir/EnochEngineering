@@ -13,27 +13,11 @@ block content
                   input#textfield.keywords(name='q', type='text', maxlength='50', value='')
                 input.button(name='b', type='image', src='images/search.gif')
             .clr
-          h2 What They Say
-          img.floated(src='images/test.gif', alt='', width='18', height='17')
-          p
-            | "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse voluptas nulla pariatur?"
-          p
-            em
-              strong by: John S., webdesigner
-          p  
-          p
-            img.floated(src='images/test.gif', alt='', width='18', height='17')
-          p
-            | "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse voluptas nulla pariatur?"
-          p
-            em
-              strong by: John S., webdesigner
+          include SBrecommendations
         .main_right
           .clr
           .right_text
-            p
-              strong Latest News:
-              |  Dipisicing elit, sed do eiusmod tempor incididunt ut labore et?
+            include MBnews
           .clr
           h2
             | Services we provide

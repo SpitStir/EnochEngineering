@@ -40,6 +40,7 @@
     <Compile Include="routes\blog.js" />
     <Compile Include="routes\services.js" />
     <Content Include="package.json" />
+    <Content Include="public\favicon.ico" />
     <Content Include="public\stylesheets\style.css" />
     <Content Include="public\stylesheets\style.styl" />
     <Content Include="README.md" />
@@ -53,6 +54,9 @@
     <Content Include="views\footer.jade" />
     <Content Include="views\layout.jade" />
     <Content Include="views\blog.jade" />
+    <Content Include="views\MBnews.jade" />
+    <Content Include="views\SBrecommendations.jade" />
+    <Content Include="views\SBnews.jade" />
     <Content Include="views\tools.jade" />
     <Content Include="views\projects.jade" />
     <Content Include="views\services.jade" />
