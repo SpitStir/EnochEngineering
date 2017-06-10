@@ -5,7 +5,7 @@ block content
     
         h3 About Us
         .main_left
-          .search
+          //.search
             form#form1(name='form1', method='post', action='#')
               p Search: 
               label
@@ -13,19 +13,27 @@ block content
                   input#textfield.keywords(name='q', type='text', maxlength='50', value='')
                 input.button(name='b', type='image', src='images/search.gif')
             .clr
+          include SBnews
           include SBrecommendations
         .main_right
           .right_text
-            include MBnews
+            //include MBnews
           .clr
           h2
             | Vision & Mission
             br
             span  Why we do what we do 
           p
-            | We want to make a positive contribution to society. Our knowledge and skillsets give use the ability to help people develop Safe, innovative and efficient solutions. Through building relationships and working collaboratively we aim to developed solutions with re-usability. Along with providing engineering consulting and labour services we are developing online engineering tools and services, to share knowledge. 
+            | What you project to have a greater impact. Let make a positive contribution to society. Our knowledge and skillsets give use the ability to help people develop safe, innovative and efficient solutions. Through building relationships and working collaboratively we aim to developed solutions with re-usability. Along with providing engineering consulting and labour services we are developing online engineering tools and services, to share knowledge. 
           h2 Our Philosophy
+            br
+            span  How we do what we do 
           p
-            | When
+            | When working on projects 
+          h2 Our Solutions
+            br
+            span  What we do 
+          p
+            | When working on projects 
         .clr
       
